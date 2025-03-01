@@ -60,10 +60,8 @@ function App() {
               <Route path="chat" element={<Chat />} />
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
-              <Route path="services/groups" element={<StudyGroup />} />
               <Route path="services/events" element={<CommunityEvents />} />
               <Route path="services/matching" element={<InterestMatching />} />
-              <Route path="support" element={<SupportPage />} />
               <Route path="blog" element={<Blog />} />
               <Route path="privacy" element={<PrivacyPolicy />} />
               <Route path="terms" element={<TermsOfService />} />
@@ -78,7 +76,9 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
             {/* <Routes> */}
               <Route path="community" element={<Community />} />
+              <Route path="support" element={<SupportPage />} />
             <Route path="faq" element={<FAQ />} />
+              <Route path="services/groups" element={<StudyGroup />} />
             {/* </Routes> */}
           </Routes>
         </BrowserRouter>
